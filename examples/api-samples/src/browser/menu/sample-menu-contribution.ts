@@ -17,57 +17,119 @@
 import { Command, CommandContribution, CommandRegistry, MAIN_MENU_BAR, MenuContribution, MenuModelRegistry, MenuNode, SubMenuOptions } from '@theia/core/lib/common';
 import { injectable, interfaces } from 'inversify';
 
-const SampleCommand: Command = {
-    id: 'sample-command',
-    label: 'Sample Command'
+const RequirementsCommandNewItem: Command = {
+    id: 'requirements-command-newitem',
+    label: 'New Item'
 };
-const SampleCommand2: Command = {
-    id: 'sample-command2',
-    label: 'Sample Command2'
+const RequirementsCommandMyItems: Command = {
+    id: 'requirements-command-myitem',
+    label: 'My Items'
+};
+const RequirementsCommandRecent: Command = {
+    id: 'requirements-command-recent',
+    label: 'Recent'
+};
+const RequirementsCommandFeatureTimeline: Command = {
+    id: 'requirements-command-featuretimeline',
+    label: 'Feature Timeline'
+};
+const RequirementsCommandEpicRoadmap: Command = {
+    id: 'requirements-command-epicroadmap',
+    label: 'Epic Roadmap'
+};
+const RequirementsCommandAnalytics: Command = {
+    id: 'requirements-command-analytics',
+    label: 'Analytics'
+};
+const RequirementsCommandHelp: Command = {
+    id: 'requirements-command-help',
+    label: 'Help'
 };
 
 @injectable()
-export class SampleCommandContribution implements CommandContribution {
+export class RequirementsCommandContribution implements CommandContribution {
     registerCommands(commands: CommandRegistry): void {
-        commands.registerCommand(SampleCommand, {
+        commands.registerCommand(RequirementsCommandNewItem, {
             execute: () => {
                 alert('This is a sample command!');
             }
         });
-        commands.registerCommand(SampleCommand2, {
+        commands.registerCommand(RequirementsCommandMyItems, {
             execute: () => {
-                alert('This is sample command2!');
+                alert('This is sample command!');
+            }
+        });
+        commands.registerCommand(RequirementsCommandRecent, {
+            execute: () => {
+                alert('This is sample command!');
+            }
+        });
+        commands.registerCommand(RequirementsCommandFeatureTimeline, {
+            execute: () => {
+                alert('This is sample command!');
+            }
+        });
+        commands.registerCommand(RequirementsCommandEpicRoadmap, {
+            execute: () => {
+                alert('This is sample command!');
+            }
+        });
+        commands.registerCommand(RequirementsCommandAnalytics, {
+            execute: () => {
+                alert('This is sample command!');
+            }
+        });
+        commands.registerCommand(RequirementsCommandHelp, {
+            execute: () => {
+                alert('This is sample command!');
             }
         });
     }
-
 }
 
 @injectable()
-export class SampleMenuContribution implements MenuContribution {
+export class RequirementsMenuContribution implements MenuContribution {
     registerMenus(menus: MenuModelRegistry): void {
-        const subMenuPath = [...MAIN_MENU_BAR, 'sample-menu'];
-        menus.registerSubmenu(subMenuPath, 'Sample Menu', {
-            order: '2' // that should put the menu right next to the File menu
+        const subMenuPath = [...MAIN_MENU_BAR, 'requirements-menu'];
+        menus.registerSubmenu(subMenuPath, 'Requirements', {
+            order: '3' // that should put the menu right next to the Edit menu
         });
         menus.registerMenuAction(subMenuPath, {
-            commandId: SampleCommand.id,
+            commandId: RequirementsCommandNewItem.id,
             order: '0'
         });
         menus.registerMenuAction(subMenuPath, {
-            commandId: SampleCommand2.id,
+            commandId: RequirementsCommandMyItems.id,
             order: '2'
         });
-        const subSubMenuPath = [...subMenuPath, 'sample-sub-menu'];
-        menus.registerSubmenu(subSubMenuPath, 'Sample sub menu', { order: '2' });
-        menus.registerMenuAction(subSubMenuPath, {
-            commandId: SampleCommand.id,
-            order: '1'
-        });
-        menus.registerMenuAction(subSubMenuPath, {
-            commandId: SampleCommand2.id,
+        menus.registerMenuAction(subMenuPath, {
+            commandId: RequirementsCommandRecent.id,
             order: '3'
         });
+        menus.registerMenuAction(subMenuPath, {
+            commandId: RequirementsCommandFeatureTimeline.id,
+            order: '4'
+        });
+        menus.registerMenuAction(subMenuPath, {
+            commandId: RequirementsCommandEpicRoadmap.id,
+            order: '5'
+        });
+        menus.registerMenuAction(subMenuPath, {
+            commandId: RequirementsCommandAnalytics.id,
+            order: '6'
+        });
+        menus.registerMenuAction(subMenuPath, {
+            commandId: RequirementsCommandHelp.id,
+            order: '7'
+        });
+
+        const subSubMenuPath = [...subMenuPath, 'requirements-sub-menu'];
+        menus.registerSubmenu(subSubMenuPath, 'Requirements sub menu', { order: '8' });
+        menus.registerMenuAction(subSubMenuPath, {
+            commandId: RequirementsCommandHelp.id,
+            order: '1'
+        });
+
         const placeholder = new PlaceholderMenuNode([...subSubMenuPath, 'placeholder'].join('-'), 'Placeholder', { order: '0' });
         menus.registerMenuNode(subSubMenuPath, placeholder);
     }
@@ -91,7 +153,7 @@ export class PlaceholderMenuNode implements MenuNode {
 
 }
 
-export const bindSampleMenu = (bind: interfaces.Bind) => {
-    bind(CommandContribution).to(SampleCommandContribution).inSingletonScope();
-    bind(MenuContribution).to(SampleMenuContribution).inSingletonScope();
+export const bindRequirementsMenu = (bind: interfaces.Bind) => {
+    bind(CommandContribution).to(RequirementsCommandContribution).inSingletonScope();
+    bind(MenuContribution).to(RequirementsMenuContribution).inSingletonScope();
 };
