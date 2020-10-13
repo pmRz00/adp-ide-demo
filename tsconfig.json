@@ -8,8 +8,8 @@
   "include": [
     "dev-packages/*/src",
     "packages/*/src",
-    "examples/*/src",
-    "examples/browser/src-gen"
+    "development-workplace-examples/*/src",
+    "development-workplace-examples/browser/src-gen"
   ],
   "compilerOptions": {
     "allowJs": true,
@@ -146,16 +146,16 @@
         "packages/workspace/src/*"
       ],
       "@theia/api-samples/lib/*": [
-        "examples/api-samples/src/*"
+        "development-workplace-examples/api-samples/src/*"
       ],
       "@theia/api-tests/*": [
-        "examples/api-tests/*"
+        "development-workplace-examples/api-tests/*"
       ],
-      "@theia/example-browser/*": [
-        "examples/browser/*"
+      "@theia/development-workplace-example-browser/*": [
+        "development-workplace-examples/browser/*"
       ],
-      "@theia/example-electron/*": [
-        "examples/electron/*"
+      "@theia/development-workplace-example-electron/*": [
+        "development-workplace-examples/electron/*"
       ],
       "@theia/vsx-registry/lib/*": [
         "packages/vsx-registry/src/*"
@@ -168,6 +168,15 @@
       ],
       "@theia/timeline/*": [
         "packages/timeline/*"
+      ],
+      "browser-app/*": [
+        "development-workplace-extension/browser-app/*"
+      ],
+      "development-workplace-extension/*": [
+        "development-workplace-extension/development-workplace-extension/*"
+      ],
+      "electron-app/*": [
+        "development-workplace-extension/electron-app/*"
       ]
     }
   }

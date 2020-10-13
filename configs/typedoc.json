@@ -11,7 +11,7 @@
   "external-modulemap": ".*\/packages\/([\\w\\-_]+)\/",
   "name": "Theia TypeDoc",
   "exclude": [
-    "**/+(dev-packages|examples|typings)/**/*",
+    "**/+(dev-packages|development-workplace-examples|typings)/**/*",
     "**/*spec.ts"
   ]
 }

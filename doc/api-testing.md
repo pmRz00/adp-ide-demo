@@ -44,7 +44,7 @@ instead of relying on API events and promises.
 
 ## Writing tests
 
-New tests should be added in `examples/api-tests` package.
+New tests should be added in `development-workplace-examples/api-tests` package.
 This package is published to allow adopters to run tests against end products.
 Tests should be decomposed to different test suite files that adopters could include only some.
 
@@ -148,13 +148,13 @@ For instance, an example test awaits when all editors are closed before testing 
 
 > See [theia CLI docs](../dev-packages/cli/README.md#testing) to learn more about how to use  `test` command.
 
-Commands below should be executed from `examples/browser`.
+Commands below should be executed from `development-workplace-examples/browser`.
 
 To run tests once:
 
     yarn test
 
-This command starts the browser example application and runs tests from `examples/api-tests` against it.
+This command starts the browser example application and runs tests from `development-workplace-examples/api-tests` against it.
 
 ### Inspecting tests
 

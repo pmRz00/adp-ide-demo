@@ -11,11 +11,11 @@ lerna-debug.log
 .nyc_output
 coverage
 errorShots
-examples/*/src-gen
-examples/*/gen-webpack.config.js
-examples/*/.theia
-examples/*/.vscode
-examples/*/.test
+development-workplace-examples/*/src-gen
+development-workplace-examples/*/gen-webpack.config.js
+development-workplace-examples/*/.theia
+development-workplace-examples/*/.vscode
+development-workplace-examples/*/.test
 .browser_modules
 **/docs/api
 package-backup.json

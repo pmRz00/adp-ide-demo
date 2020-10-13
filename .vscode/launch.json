@@ -24,14 +24,14 @@
       "windows": {
         "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
       },
-      "cwd": "${workspaceRoot}/examples/electron",
+      "cwd": "${workspaceRoot}/development-workplace-examples/electron",
       "protocol": "inspector",
       "args": [
         ".",
         "--log-level=debug",
         "--hostname=localhost",
         "--no-cluster",
-        "--app-project-path=${workspaceRoot}/examples/electron",
+        "--app-project-path=${workspaceRoot}/development-workplace-examples/electron",
         "--remote-debugging-port=9222",
         "--no-app-auto-install",
         "--plugins=local-dir:../../plugins"
@@ -42,9 +42,9 @@
       },
       "sourceMaps": true,
       "outFiles": [
-        "${workspaceRoot}/examples/electron/src-gen/frontend/electron-main.js",
-        "${workspaceRoot}/examples/electron/src-gen/backend/main.js",
-        "${workspaceRoot}/examples/electron/lib/**/*.js",
+        "${workspaceRoot}/development-workplace-examples/electron/src-gen/frontend/electron-main.js",
+        "${workspaceRoot}/development-workplace-examples/electron/src-gen/backend/main.js",
+        "${workspaceRoot}/exampdevelopment-workplace-examplesles/electron/lib/**/*.js",
         "${workspaceRoot}/packages/*/lib/**/*.js",
         "${workspaceRoot}/dev-packages/*/lib/**/*.js"
       ],
@@ -56,12 +56,12 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Browser Backend",
-      "program": "${workspaceRoot}/examples/browser/src-gen/backend/main.js",
+      "program": "${workspaceRoot}/development-workplace-examples/browser/src-gen/backend/main.js",
       "args": [
         "--hostname=0.0.0.0",
         "--port=3000",
         "--no-cluster",
-        "--app-project-path=${workspaceRoot}/examples/browser",
+        "--app-project-path=${workspaceRoot}/development-workplace-examples/browser",
         "--plugins=local-dir:plugins",
         "--hosted-plugin-inspect=9339"
       ],
@@ -71,8 +71,8 @@
       },
       "sourceMaps": true,
       "outFiles": [
-        "${workspaceRoot}/examples/browser/src-gen/backend/*.js",
-        "${workspaceRoot}/examples/browser/lib/**/*.js",
+        "${workspaceRoot}/development-workplace-examples/browser/src-gen/backend/*.js",
+        "${workspaceRoot}/development-workplace-examples/browser/lib/**/*.js",
         "${workspaceRoot}/packages/*/lib/**/*.js",
         "${workspaceRoot}/dev-packages/*/lib/**/*.js"
       ],
@@ -99,7 +99,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Browser Backend (eclipse.jdt.ls)",
-      "program": "${workspaceRoot}/examples/browser/src-gen/backend/main.js",
+      "program": "${workspaceRoot}/development-workplace-examples/browser/src-gen/backend/main.js",
       "args": [
         "--log-level=debug",
         "--root-dir=${workspaceRoot}/../eclipse.jdt.ls/org.eclipse.jdt.ls.core",
@@ -113,8 +113,8 @@
       },
       "sourceMaps": true,
       "outFiles": [
-        "${workspaceRoot}/examples/browser/src-gen/backend/*.js",
-        "${workspaceRoot}/examples/browser/lib/**/*.js",
+        "${workspaceRoot}/development-workplace-examples/browser/src-gen/backend/*.js",
+        "${workspaceRoot}/development-workplace-examples/browser/lib/**/*.js",
         "${workspaceRoot}/packages/*/lib/**/*.js",
         "${workspaceRoot}/dev-packages/*/lib/**/*.js"
       ],
@@ -161,7 +161,7 @@
       "type": "node",
       "request": "launch",
       "args": [
-        "${workspaceFolder}/examples/browser/src-gen/backend/main.js",
+        "${workspaceFolder}/development-workplace-examples/browser/src-gen/backend/main.js",
         "${workspaceFolder}/plugins/vscode-api-tests/testWorkspace",
         "--port",
         "3030",
