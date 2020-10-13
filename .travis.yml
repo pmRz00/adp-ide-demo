@@ -15,9 +15,9 @@ cache:
     - dev-packages/application-package/node_modules
     - dev-packages/cli/node_modules
     - dev-packages/electron/node_modules
-    - development-workplace-examples/api-samples/node_modules
-    - development-workplace-examples/browser/node_modules
-    - development-workplace-examples/electron/node_modules
+    - development-workplace-extension/api-samples/node_modules
+    - development-workplace-extension/browser/node_modules
+    - development-workplace-extension/electron/node_modules
     - node_modules
     - packages/callhierarchy/node_modules
     - packages/console/node_modules

@@ -79,7 +79,7 @@
   "workspaces": [
     "dev-packages/*",
     "packages/*",
-    "development-workplace-examples/*"
+    "development-workplace-extension/*"
   ],
   "theiaPluginsDir": "plugins",
   "theiaPlugins": {

@@ -8,8 +8,8 @@
   "include": [
     "dev-packages/*/src",
     "packages/*/src",
-    "development-workplace-examples/*/src",
-    "development-workplace-examples/browser/src-gen"
+    "development-workplace-extension/*/src",
+    "development-workplace-extension/browser/src-gen"
   ],
   "compilerOptions": {
     "allowJs": true,
@@ -146,16 +146,16 @@
         "packages/workspace/src/*"
       ],
       "@theia/api-samples/lib/*": [
-        "development-workplace-examples/api-samples/src/*"
+        "development-workplace-extension/api-samples/src/*"
       ],
       "@theia/api-tests/*": [
-        "development-workplace-examples/api-tests/*"
+        "development-workplace-extension/api-tests/*"
       ],
       "@theia/development-workplace-example-browser/*": [
-        "development-workplace-examples/browser/*"
+        "development-workplace-extension/browser/*"
       ],
       "@theia/development-workplace-example-electron/*": [
-        "development-workplace-examples/electron/*"
+        "development-workplace-extension/electron/*"
       ],
       "@theia/vsx-registry/lib/*": [
         "packages/vsx-registry/src/*"

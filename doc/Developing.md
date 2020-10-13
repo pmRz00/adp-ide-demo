@@ -82,7 +82,7 @@ To build and run the browser example:
     git clone https://github.com/eclipse-theia/theia \
     && cd theia \
     && yarn \
-    && cd development-workplace-examples/browser \
+    && cd ddevelopment-workplace-extension/browser \
     && yarn run start
 
 Start your browser on http://localhost:3000.
@@ -93,7 +93,7 @@ To build and run the Electron example:
     && cd theia \
     && yarn \
     && yarn run rebuild:electron \
-    && cd development-workplace-examples/electron \
+    && cd development-workplace-extension/electron \
     && yarn run start
 
 ### Run the browser example with SSL
@@ -103,7 +103,7 @@ To run the browser example using SSL use:
     git clone https://github.com/eclipse-theia/theia \
     && cd theia \
     && yarn \
-    && cd development-workplace-examples/browser \
+    && cd development-workplace-extension/browser \
     && yarn run start --ssl --cert /path/to/cert.crt --certkey /path/to/certkey.key
 
 Start your browser on https://localhost:3000.
@@ -116,7 +116,7 @@ You can start by prefixing any GitHub URL in the Theia repository with `gitpod.i
 - Gitpod will start a properly configured for Theia development workspace, clone and build the Theia repository.
 - After the build is finished, run from the terminal in Gitpod:
 
-        cd development-workplace-examples/browser \
+        cd development-workplace-extension/browser \
         && yarn run start ../.. --hostname 0.0.0.0
 
 ## Clone the repository

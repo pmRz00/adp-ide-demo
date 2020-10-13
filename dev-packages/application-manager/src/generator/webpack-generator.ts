@@ -88,7 +88,7 @@ if (staticCompression) {
     }));
 }
 plugins.push(new CircularDependencyPlugin({
-    exclude: /(node_modules|development-workplace-examples)[\\\\|\/]./,
+    exclude: /(node_modules|development-workplace-extension)[\\\\|\/]./,
     failOnError: false // https://github.com/nodejs/readable-stream/issues/280#issuecomment-297076462
 }));
 

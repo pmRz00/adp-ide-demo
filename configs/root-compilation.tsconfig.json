@@ -131,10 +131,10 @@
       "path": "../packages/timeline/compile.tsconfig.json"
     },
     {
-      "path": "../development-workplace-examples/api-samples/compile.tsconfig.json"
+      "path": "../development-workplace-extension/api-samples/compile.tsconfig.json"
     },
     {
-      "path": "../development-workplace-examples/electron/compile.tsconfig.json"
+      "path": "../development-workplace-extension/electron/compile.tsconfig.json"
     }
   ]
 }
